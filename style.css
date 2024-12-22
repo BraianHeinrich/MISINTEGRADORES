@@ -5,76 +5,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     
-
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-
+/*---Header---*/
 
 .header {
-   width: 100%;
-   height: 50px;
-   margin-top: 40px;
-   z-index: 1;
-   
-}
-
-.menu_container{
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
+    background: linear-gradient(90deg, rgba(1,0,17,1) 0%, rgba(18,75,111,1) 60%, rgba(63,153,102,1) 100%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu, .navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    
+}
+
+
+.menu{
+    gap: 150px;
+}
+
+.navbar-list {
+    gap: 40px;
+}
+
+.navbar-list a{
+    color: #0412a6;
+    font-size: 18px;
+    font-stretch: expanded;
+    font-weight: 900;
+    
 }
 
 .logo{
     height: 100%;
-    display: flex;
-    align-items: center;
 }
 
-.logo img{
-    width: 100px;
-}
 
-.menu {
-    display: flex;
-    align-items: center;
-}
 
-.menu ul{
-    display: flex;
-}
-
-.menu ul li {
-    list-style: none;
-    margin-left: 36px;
-}
-
-.menu ul li a{
-    text-decoration: none;
-    font-size: 15px;
-    color: #080600;
-    text-transform: uppercase;
-}
-
-#selected{
-    background-color: rgb(185, 203, 236);
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
-.menu img{
+#menu-toggle, .menu-hamburguesa{
     display: none;
 }
 
-.menu #btn_menu {
-    display: none;
-}
+
+
+
 
 
 
@@ -106,9 +97,18 @@ body {
 .container_cover .text h1{
     font-size: 75px;
     font-weight: 600;
-    color: #ffff;
    
+    /* gradient */
+    background: linear-gradient(45deg, rgba(104,139,85,0.99) 0%, rgba(104,139,85,0.99)
+     27%, rgba(29,62,9,1) 54%, rgba(29,62,9,1) 100%);
+     color: transparent;
+     background-clip: text;
+     -webkit-background-clip: text;
+
+
 }
+   
+    
 
 
 .container_cover .text p{
@@ -314,112 +314,6 @@ body {
 }
 .pie-pagina .grupo-2 small{
     font-size: 15px;
-}
-/* @media screen and(max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1rf);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-
-}*/
-
-
-/*responsive la pagina*/
-
-@media screen and (max-width:1200px){
-
-    header{
-        padding: 40px;
-    }
-}
-
-@media screend and (max-width: 720px){
-    .menu container{
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: white;
-        width: 250px;
-        height: 100vh;
-        padding: 40px;
-    }
-}
-
-
-
-
-/**menu responsive*/
-
-@media  screen and (max-width:1200px) {
-
-    header {
-        padding: 40px;
-    }
-
-}
-
-@media screen and (max-width: 720px) {
-
-    .menu {
-        position: fixed;
-        top: 0;
-        right: -250px;
-        background-color: rgb(255, 254, 254);
-        width: 250px;
-        height: 100vh;
-        padding: 40px;
-        z-index: 1;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        margin-top: 40px;
-
-    }
-
-    .menu ul li a{
-        margin-top: 30px;
-        margin-left: 0; 
-
-    }
-
-    .menu ul li a {
-        color: #0f0101;
-    } 
-
-    #selected {
-        background-color: none;
-        padding: 0px;
-        border-radius: none;
-        color: rgb(108, 175, 187);
-
-    }
-
-    .menu  img {
-        display: block;
-        width: 60px;
-    }
-
-    #menu_hamburgesa{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgb(0,0,0,0.5);
-        display: none;  
-    }
-
-    .menu #btn_menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        background: red;
-    }
 }
 
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="iniciosesion/">
     <link rel="stylesheet" href="registro/">
     <link rel="stylesheet" href="imagenes/fontello.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    
@@ -16,22 +17,24 @@
 </head>
 <body>
     <header class="header"> 
-        <div class="menu_container">
-            <div class="logo">
-                <img src="imagenes/logo.jfif" alt="">
-            </div>
-            <nav class="menu">
-                <i class="icon-hamburguesa" id="btn_menu"></i>
-                <div id="menu_hamburgesa"></div>
-                <img src="imagenes/logo.jfif" alt="">
-                <ul>
-                    <li><a href="iniciosesion/inicio.html"id="selected">Iniciar Sesion</a></li>
-                    <li><a href="#Alimentacion"id="selected">Alimentacion</a></li>
-                    <li><a href="#pie-pagina"id="selected">Contacto</a></li>
-                </ul>
-            </nav>
-        </div> 
-    </header>
+        <!--logo-->
+        <img src="imagenes/1.png" alt="Logo braian" class="logo"/>  
+        <!--Navbar-->
+       <nav class="menu">
+          <ul class="navbar-list">
+              <li><a href="iniciosesion/inicio.html"id="selected">Iniciar Sesion</a></li>
+              <li><a href="#Alimentacion"id="selected">Alimentacion</a></li>
+              <li><a href="#pie-pagina"id="selected">Contacto</a></li>
+          </ul>
+          <!---menu toggle-->
+           <label for="menu-toggle" class="menu-hamburguesa">
+             <img src="imagenes/menuhambur.png" alt="menu hamburguesa">
+         </label>
+         <input type="checkbox" id="menu-toggle">
+         <img src="imagenes/logo.jfif" alt="">
+     </nav>
+  </header>
+
     <main>
         <div class="container_cover">
            <div class="cover">
