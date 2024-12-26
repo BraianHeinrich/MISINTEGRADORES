@@ -1,27 +1,32 @@
 /* tablet */
 
 @media (max-width:992px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    /*Mostrar el boton hamburguesa */
+    .menu-hamburguesa {
+        display: block;
+    }
+
     .navbar-list  {
         position: absolute;
         top: 65px;
-        left: 5%;
         right: 5%;
         width: 90%;
         flex-direction: column;
-        align-items: start;
         background: linear-gradient(90deg, rgba(1,0,17,1) 0%, rgba(18,75,111,1) 60%, rgba(63,153,102,1) 100%);
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgb(18, 29, 62);
-        border-top: 0;
-        border-radius: 0px 0px 15px 15px;
-        padding: 45px 30px; 
+        border: 2px solid rgb(18, 29, 62);
+        border-radius: 0 0 15px 15px;
+        padding: 45px 30px;
         gap: 25px;
         display: none;
-        
-       
-        
-        
+    }
+
+    #menu-toggle:checked~.navbar-list {
+        display: flex;
     }
 
     .navbar-list a {
@@ -43,11 +48,112 @@
         height: 20px;
         width: 25px;
     }
+}
+
+@media (max-width:576px) {
+    .header{
+        width: 100%;
+        height: 55px;
+        padding: 0;
+        
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 50px;
+        height: 50px;
+        padding: 10%;
+    }
+   .container_cover  {
+    background-position: 100%;
+    text-align: center;
+    
+   }
+
+   .cover .svg img{
+    display: none;
+   
+   }
+
+   .Alimentacion-content {
+    text-align: center;
+   }
+
+   .text-p{
+    font-size: 15px;
+   }
+
+   .items li{
+    font-size: 15px;
+    text-align: justify;
+   }
+
+   .Alimentacion-group h3{
+    font-size: 20px;
+   }
+
+   .Alimentacion-content h2 {
+    font-size: 20px;
+   }
+
+   .nutricion-1 {
+    font-size: 20px;
+   }
+
+   /* SALUD */
+
+   .Contacto-1 h3{
+    font-size: 25px;
+   }
+
+   .Contacto-1 p {
+    font-size: 15px;
+   }
+
+   /* informacion salud */
+
+   .Informacion-1 h3{
+    font-size: 20px;
+   }
+
+   .Informacion-1 p{
+    font-size: 15px;
+    text-align: justify;
+    vertical-align: middle;
+   }
+
+   .Informacion-1 img{
+    width: 50%;
+   }
+
+   
+   /* footer */
+
+   .pie-pagina{
+   text-align: center;
+    flex-direction: column;
+    width: 100%;
+    
+   }
+
+   .pie-pagina .grupo-1 .box p{
+    font-size: 15px;
+    text-align: center;
+   }
 
    
 
-    #menu-toggle:checked + .menu-hamburguesa + .navbar-list{
-        display: flex;
-    }
+   .box img{
+    width: 5px;
+    height: 90px;
+   }
 
+   .pie-pagina .grupo-1 .box h2{
+    font-size: 15px;
+   }
+
+  
+   
+  
 }

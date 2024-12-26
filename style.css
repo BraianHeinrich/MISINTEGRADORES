@@ -1,4 +1,4 @@
-@import url(/paletadecolores.com.ar/paleta/010d23/03223f/038bbb/fccb6f/e19f41/);
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 *{
@@ -28,45 +28,50 @@ body {
     z-index: 2;
 }
 
-.menu, .navbar-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    
+.logo {
+    height: 100%;
 }
 
+/* MENU GENERAL */
 
 .menu{
+    display: flex;
+    align-items: center;
     gap: 150px;
 }
 
 .navbar-list {
+    display: flex;
+    align-items: center;
     gap: 40px;
 }
 
 .navbar-list a{
     color: #0412a6;
     font-size: 18px;
-    font-stretch: expanded;
     font-weight: 900;
-    
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.logo{
-    height: 100%;
+.navbar-list a:hover {
+    color: #ffffff;
 }
 
-
-
-#menu-toggle, .menu-hamburguesa{
+/* MENU HAMBURGUESA */
+.menu-toggle {
     display: none;
 }
 
+.menu-hamburguesa {
+    display: none;
+    cursor: pointer;
+}
 
-
-
-
+.menu-hamburguesa img {
+    height: 20px;
+    width: 25px;
+}
 
 
 
@@ -74,9 +79,10 @@ body {
     width: 100%;
     height: 800px;
     background-image: url(imagenes/imagen\ de\ fondo\ portada.jpg);
-    background-position: center;
+    background-position: center; 
     background-repeat: no-repeat;
     background-size: 120%;
+    padding: 40px;
 }
 
 .cover{
@@ -256,11 +262,12 @@ body {
 
 /* footer */
 .pie-pagina {
+    height: 100%;
     width: 100%;
     background-color: #0a141d;
 }
 .pie-pagina{
-    padding: 0 100px;
+    padding: 20px;
 }
 .pie-pagina .grupo-1{
     width: 100%;
