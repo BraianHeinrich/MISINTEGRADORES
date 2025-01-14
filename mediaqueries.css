@@ -52,30 +52,43 @@
 
 @media (max-width:576px) {
     .header{
-        width: 100%;
-        height: 55px;
-        padding: 0;
+       height: 70px;
+       position: fixed;
+       width: 100%;
+       top: 0;
+       z-index: 10;
         
     }
+
+    
 
    
 
     .menu {
         flex-direction: column;
         align-items: flex-end;
-        width: 50px;
-        height: 50px;
+        width: 25px;
+        height: 25px;
         padding: 10%;
+        
     }
+
+    
    .container_cover  {
-    background-position: 100%;
+    background-position: 0;
     text-align: center;
+    padding: 0;
+    margin: 0;
+    
     
    }
 
    .cover .svg img{
     display: none;
-   
+   }
+
+   .container_cover img{
+    object-fit: cover;
    }
 
    .Alimentacion-content {
@@ -115,33 +128,44 @@
 
    /* informacion salud */
 
+   .Informacion-salud {
+    padding: 0;
+    margin: 0;
+   }
+
    .Informacion-1 h3{
     font-size: 20px;
    }
 
-   .Informacion-1 p{
-    font-size: 15px;
-    text-align: justify;
-    vertical-align: middle;
+   .Informacion-1 img{
+    float: none;
+    width: 150px;
    }
 
    .Informacion-1 img{
     width: 50%;
    }
 
+   .Informacion-1 p{
+    font-size: 15px;
+    text-align: start;
+    
+   }
+
+  
    
    /* footer */
 
    .pie-pagina{
     text-align: center;
     flex-direction: column;
-    width: 100%;
-    
+    min-width: 100%;
    }
 
    .pie-pagina .grupo-1 .box p{
     font-size: 15px;
     text-align: center;
+   
    }
 
    
