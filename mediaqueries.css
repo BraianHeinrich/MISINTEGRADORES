@@ -57,6 +57,7 @@
        width: 100%;
        top: 0;
        z-index: 10;
+       
         
     }
 
@@ -79,6 +80,8 @@
     text-align: center;
     padding: 0;
     margin: 0;
+    
+    
     
     
    }
@@ -129,8 +132,8 @@
    /* informacion salud */
 
    .Informacion-salud {
-    padding: 0;
-    margin: 0;
+    padding: 10%;
+    height: auto;
    }
 
    .Informacion-1 h3{
@@ -155,31 +158,19 @@
   
    
    /* footer */
+  .pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1rf);
+    grid-gap: 30px;
+    padding: 110px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure img{
+        width: 100px;
+    }
+    
+    
 
-   .pie-pagina{
-    text-align: center;
-    flex-direction: column;
-    min-width: 100%;
-   }
-
-   .pie-pagina .grupo-1 .box p{
-    font-size: 15px;
-    text-align: center;
    
-   }
-
-   
-
-   .box img{
-    width: 5px;
-    height: 90px;
-   }
-
-   .pie-pagina .grupo-1 .box h2{
-    font-size: 15px;
-   }
-
-  
    
   
 }

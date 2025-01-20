@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style: none;
     
+    
 }
 
 body {
@@ -83,6 +84,7 @@ body {
     background-repeat: no-repeat;
     background-size: 120%;
     padding: 40px;
+    
 }
 
 .cover{
@@ -286,7 +288,7 @@ body {
     align-items: center;
 }
 .pie-pagina .grupo-1 .box figure img{
-    width: 250px;
+    width: 200px;
 }
 .pie-pagina .grupo-1 .box h2 {
     color: #ffff;
