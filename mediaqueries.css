@@ -66,16 +66,21 @@
         display: none;
     }
 
-    .cover h1{
+    .container_cover .cover .h1{
         width: 90%;
         max-width: 500px;
         min-width: unset;
+        border: 1px solid red;
         
     }
 
     .cover p{
         width: 60%;
         max-width: 80%;
+    }
+
+    .box p {
+        font-size: 20px;
     }
     
 }
@@ -190,15 +195,7 @@
   
    
    /* footer */
-  .pie-pagina .grupo-1{
-    width: 90%;
-    grid-template-columns: repeat(1, 1rf);
-    grid-gap: 30px;
-    padding: 110px 0px;
-    }
-    .pie-pagina .grupo-1 .box figure img{
-        width: 100px;
-    }
+ 
     
     
 

@@ -280,67 +280,26 @@ main{
 
 
 /* footer */
-.pie-pagina {
-    height: 65%;
+.box{
     width: 100%;
-    background-color: #0a141d;
+    height: 65%;
+    text-align: center;
+    padding: 20px;
+    background-color: #526153;
+}
 
-}
-.pie-pagina{
-    padding: 60px 0;
-}
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1rf);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-    width: 200px;
-}
-.pie-pagina .grupo-1 .box h2 {
-    color: #ffff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.pie-pagina .grupo-1 .box p{
-    color: #ffff;
+.copyright {
     margin-bottom: 10px;
 }
 
-.pie-pagina .grupo-1 .red-social li{
-    display: inline-block;
+.red-social{
+    margin-top: 10px;
+}
+
+.icon-elem a{
+    margin-left: 10px;
     text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #ffff;
-    margin-right: 10px;
-    background-color: #0d2033;
-    text-align: center;
-    transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: brown;
-}
-.pie-pagina .grupo-2{
-    background-color: #0a1a2a;
-    padding: 15px 12px;
-    text-align: center;
-    color: #ffff;
-}
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
+    color: #eae6ca;
 }
 
 
