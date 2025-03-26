@@ -18,7 +18,7 @@ body {
 /*---Header---*/
 
 .header {
-    background: linear-gradient(90deg, rgba(1,0,17,1) 0%, rgba(18,75,111,1) 60%, rgba(63,153,102,1) 100%);
+    background-color: #465446;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@ body {
     height: 65px;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    
 }
 
 .logo {
@@ -35,20 +35,23 @@ body {
 
 /* MENU GENERAL */
 
-.menu{
+.menu, .navbar-list{
     display: flex;
     align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.menu{
     gap: 150px;
 }
 
-.navbar-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+.navbar-list{
+    gap: 30px;
 }
 
 .navbar-list a{
-    color: #0412a6;
+    color: #eae6ca;
     font-size: 18px;
     font-weight: 900;
     text-decoration: none;
@@ -74,37 +77,40 @@ body {
     width: 25px;
 }
 
-
+main{
+    background-color: #526153;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
 
 .container_cover {
-    width: 100%;
-    height: 800px;
-    background-image: url(imagenes/imagen\ de\ fondo\ portada.jpg);
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: 120%;
-    padding: 40px;
+    margin-top: 65px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
     
 }
 
 .cover{
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 50%;
 }
 
-.container_cover .text{
-    max-width: 400px;
-    
-}
 
-.container_cover .text h1{
-    font-size: 75px;
-    font-weight: 600;
+.cover h1{
+    font-size: 48px;
+    font-weight: 800;
+    width: 80%;
+    min-width: 500px;
    
     /* gradient */
     background: linear-gradient(45deg, rgba(104,139,85,0.99) 0%, rgba(104,139,85,0.99)
@@ -112,24 +118,35 @@ body {
      color: transparent;
      background-clip: text;
      -webkit-background-clip: text;
-
+     
 
 }
    
-    
-
-
-.container_cover .text p{
-    font-size: 20px;
-   margin-top: 40px;
+.cover  p{
+    font-size: 14px;
+   width: 70%;
    color: #ffff;
 }
 
-
-
-.container_cover .svg img {
-    width: 500px;
+.card- {
+   width: 100%;
+   height: auto;
 }
+
+.card- img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+   
+
 
 
 
@@ -264,12 +281,13 @@ body {
 
 /* footer */
 .pie-pagina {
-    height: 100%;
+    height: 65%;
     width: 100%;
     background-color: #0a141d;
+
 }
 .pie-pagina{
-    padding: 20px;
+    padding: 60px 0;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -282,7 +300,7 @@ body {
 }
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
-    height: 100%;
+    height: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +335,7 @@ body {
 }
 .pie-pagina .grupo-2{
     background-color: #0a1a2a;
-    padding: 15px 10px;
+    padding: 15px 12px;
     text-align: center;
     color: #ffff;
 }

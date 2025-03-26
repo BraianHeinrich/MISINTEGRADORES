@@ -10,16 +10,21 @@
     .menu-hamburguesa {
         display: block;
     }
+    .navbar{
+        gap: 15px;
+    }
 
     .navbar-list  {
         position: absolute;
         top: 65px;
+        left: 5%;
         right: 5%;
         width: 90%;
         flex-direction: column;
-        background: linear-gradient(90deg, rgba(1,0,17,1) 0%, rgba(18,75,111,1) 60%, rgba(63,153,102,1) 100%);
-        border: 2px solid rgb(18, 29, 62);
-        border-radius: 0 0 15px 15px;
+        background:  #465446;
+        border: 2px solid rgb(244, 237, 197);
+        border-top: 0;
+        border-radius: 0px 0px 15px 15px;
         padding: 45px 30px;
         gap: 25px;
         display: none;
@@ -31,8 +36,7 @@
 
     .navbar-list a {
         font-size: 18px;
-        background: linear-gradient(45deg, rgba(104,139,85,0.99) 0%, rgba(104,139,85,0.99)
-        27%, rgba(29,62,9,1) 54%, rgba(29,62,9,1) 100%);
+        background:  #eae6ca;
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
@@ -41,6 +45,7 @@
     .menu-hamburguesa{
         display: flex;
         cursor: pointer;
+        order: 2;
        
     }
 
@@ -48,11 +53,36 @@
         height: 20px;
         width: 25px;
     }
+
+    .cover{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .card- img{
+        display: none;
+    }
+
+    .cover h1{
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+        
+    }
+
+    .cover p{
+        width: 60%;
+        max-width: 80%;
+    }
+    
 }
 
 @media (max-width:576px) {
     .header{
-       height: 70px;
+       height: 65px;
        position: fixed;
        width: 100%;
        top: 0;
@@ -74,25 +104,27 @@
         
     }
 
-    
-   .container_cover  {
+   
+   .cover  {
     background-position: 0;
     text-align: center;
     padding: 0;
     margin: 0;
-    
-    
+   }
+
+   .cover p{
+    background-color: red;
+    font-size: 15px;
     
     
    }
 
-   .cover .svg img{
+   
+   .card- img{
     display: none;
    }
 
-   .container_cover img{
-    object-fit: cover;
-   }
+   
 
    .Alimentacion-content {
     text-align: center;
