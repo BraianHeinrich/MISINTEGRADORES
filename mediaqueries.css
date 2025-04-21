@@ -148,8 +148,7 @@
    .text-p,
    .items li,
    .Contacto-1 p {
-    font-size: 14px;
-    padding: 0 15px;
+    padding: 0 10px;
    }
 
    .card- img{
@@ -188,5 +187,9 @@
     height: 28px;
    }
 
-   
+   .text-p,
+ .items li,
+ .Contacto-1 p {
+  text-align: center;
+ }
 }
