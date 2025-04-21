@@ -7,9 +7,7 @@
     }
 
     /*Mostrar el boton hamburguesa */
-    .menu-hamburguesa {
-        display: block;
-    }
+    
     .navbar{
         gap: 15px;
     }
@@ -17,17 +15,18 @@
     .navbar-list  {
         position: absolute;
         top: 65px;
-        left: 5%;
-        right: 5%;
-        width: 90%;
+        left: 0;
+        right: 0;
+        width: 100%;
         flex-direction: column;
         background:  #465446;
         border: 2px solid rgb(244, 237, 197);
-        border-top: 0;
-        border-radius: 0px 0px 15px 15px;
-        padding: 45px 30px;
-        gap: 25px;
+        border-top: none;
+        border-radius: 0 0 15px 15px;
+        padding: 30px 20px;
+        gap: 20px;
         display: none;
+        z-index: 5;
     }
 
     #menu-toggle:checked~.navbar-list {
@@ -46,7 +45,12 @@
         display: flex;
         cursor: pointer;
         order: 2;
+        margin-right: 15px;
        
+    }
+
+    .menu-hamburguesa {
+        display: block;
     }
 
     .menu-hamburguesa img{
@@ -54,152 +58,135 @@
         width: 25px;
     }
 
+    .container_cover {
+        flex-direction: column;
+        padding: 80px 10px;
+        text-align: center;
+    }
+
     .cover{
         width: 100%;
-        text-align: center;
-        justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
+    }
+
+    .cover h1 {
+       font-size: 60px;
+        
     }
     
     .card- img{
         display: none;
     }
 
-    .container_cover .cover .h1{
-        width: 90%;
-        max-width: 500px;
-        min-width: unset;
-        border: 1px solid red;
-        
-    }
+   
 
     .cover p{
-        width: 60%;
-        max-width: 80%;
+       font-size: 16px;
+       width: 90%;
     }
 
     .box p {
         font-size: 20px;
     }
+
+    .Alimentacion-content {
+        padding: 0 20px;
+    }
+
+    .text-p, .items li, .Contacto-1 p {
+        padding: 0;
+    }
+
+    .Informacion-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Informacion-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .Contacto-1 p {
+        font-size: 20px;
+        text-align: justify;
+        padding: 0 30px;
+    }
     
 }
-
+/* CELULAR */
 @media (max-width:576px) {
     .header{
        height: 65px;
-       position: fixed;
-       width: 100%;
-       top: 0;
-       z-index: 10;
+       padding: 0 15px;
        
-        
     }
-
-    
-
-   
 
     .menu {
-        flex-direction: column;
-        align-items: flex-end;
-        width: 25px;
-        height: 25px;
-        padding: 10%;
+        width: 100%;
+       justify-content: space-between;
+       padding: 0;
         
     }
 
-   
-   .cover  {
-    background-position: 0;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-   }
+    .menu-hamburguesa img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .cover h1 {
+        font-size: 32px;
+        padding: 0 10px;
+    }
 
    .cover p{
-    background-color: red;
-    font-size: 15px;
-    
-    
+     font-size: 15px;
+     padding: 0 10px;
    }
 
-   
+   .text-p,
+   .items li,
+   .Contacto-1 p {
+    font-size: 14px;
+    padding: 0 15px;
+   }
+
    .card- img{
     display: none;
    }
 
-   
-
-   .Alimentacion-content {
-    text-align: center;
+   .Alimentacion-content h2,
+   .Alimentacion-group h3,
+   .nutricion-1,
+   .Contacto-1 h3 {
+    font-size: 18px;
    }
 
-   .text-p{
-    font-size: 15px;
+   .Informacion-1 {
+    gap: 30px;
    }
 
-   .items li{
-    font-size: 15px;
-    text-align: justify;
-   }
-
-   .Alimentacion-group h3{
-    font-size: 20px;
-   }
-
-   .Alimentacion-content h2 {
-    font-size: 20px;
-   }
-
-   .nutricion-1 {
-    font-size: 20px;
-   } 
-
-   /* SALUD */
-
-   .Contacto-1 h3{
+   #Informacion-salud h4 {
     font-size: 25px;
    }
 
-   .Contacto-1 p {
-    font-size: 15px;
+   .Informacion-card {
+    width: 95%;
+    padding: 20px;
    }
 
-   /* informacion salud */
+   /* FOOTER */
 
-   .Informacion-salud {
-    padding: 10%;
-    height: auto;
+   .footer-text {
+    font-size: 0.85rem;
+    padding: 0 10px;
    }
 
-   .Informacion-1 h3{
-    font-size: 20px;
+   .social-icons img {
+    width: 28px;
+    height: 28px;
    }
-
-   .Informacion-1 img{
-    float: none;
-    width: 150px;
-   }
-
-   .Informacion-1 img{
-    width: 50%;
-   }
-
-   .Informacion-1 p{
-    font-size: 15px;
-    text-align: start;
-    
-   }
-
-  
-   
-   /* footer */
- 
-    
-    
 
    
-   
-  
 }

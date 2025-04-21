@@ -1,4 +1,6 @@
-
+html, body {
+    overflow-x: hidden;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 *{
@@ -26,6 +28,7 @@ body {
     height: 65px;
     position: fixed;
     width: 100%;
+    z-index: 10;
     
 }
 
@@ -93,61 +96,46 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px 0;
-    
+    padding: 120px 0;
+    background-image: url(imagenes/imagen\ de\ fondo\ portada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    text-align: center;
 }
+    
+    
 
-.cover{
+
+.cover {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    width: 50%;
-}
-
-
-.cover h1{
-    font-size: 48px;
-    font-weight: 800;
-    width: 80%;
-    min-width: 500px;
-   
-    /* gradient */
-    background: linear-gradient(45deg, rgba(104,139,85,0.99) 0%, rgba(104,139,85,0.99)
-     27%, rgba(29,62,9,1) 54%, rgba(29,62,9,1) 100%);
-     color: transparent;
-     background-clip: text;
-     -webkit-background-clip: text;
-     
-
-}
-   
-.cover  p{
-    font-size: 14px;
-   width: 70%;
-   color: #ffff;
-}
-
-.card- {
-   width: 100%;
-   height: auto;
-}
-
-.card- img{
+    align-items: center;
+    gap: 20px;
     width: 100%;
-    height: auto;
-    display: block;
 }
 
-
-
-
-
-
-
+.cover h1 {
+    font-size: 64px; /* Agrandado */
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(104,139,85,0.99), rgba(29,62,9,1));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
    
 
-
+.cover p {
+    font-size: 17px;
+    width: 80%;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: -1px 0 #090, 1px 0 #090, 0 1px #090, 0 -1px #090;
+}
 
 
 
@@ -160,7 +148,7 @@ main{
     background-repeat: no-repeat ;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px 0 ;
+    padding: 100px 0;
     background-color: #e1e2e6;
 }
 
@@ -191,7 +179,7 @@ main{
     font-size: 20px;
     color: black;
     margin-bottom: 10px;
-    padding: 0 100px;
+    padding: 0 20px;
     text-align: justify;
 }
 
@@ -206,11 +194,16 @@ main{
 
 }
 
+
 .items li{ 
-    padding: 0 100px;
+    padding: 0 20px;
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
+    list-style-position: inside;
+   
+    
 }
+
 
 
 /* salud */
@@ -221,14 +214,14 @@ main{
     background-size: auto;
     background-attachment: fixed;
     color: goldenrod;
-    padding: 5px;
+    padding: 100px 0;
     
 }
 
 .Contacto-1 h3{
     color: #080600;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: normal;
     text-shadow: #b3aeae 0 -5px;
 }
@@ -236,71 +229,183 @@ main{
 .Contacto-1 p {
     font-size: 20px;
     text-align: justify;
-    padding: 0 100px;
+    padding: 0 20px;
 }
+
+
 
 
 /* informacion salud */
 
-.Informacion-salud{
-   height: 260vh;
+#Informacion-salud{
+   padding: 70px 0;
+   margin-top: 80px;
    display: flex;
+   flex-direction: column;
    justify-content: center;
-   background-repeat: no-repeat; 
-    background-color: #e1e2e6;
-    border-radius: 5px;
-    padding: 0 100px;
-}
-.Informacion-1 h3{
-    text-align: center;
-    font-size: 2rem;
-    padding: 20px;
-    text-shadow: white 0 -5px;
-}
-.Informacion-1 p{
-    z-index: 1;
-    width: 540px;
-    height: 440px;
-    font-size: 19px;
-    line-height: 1.5;
-    border-radius: 5%;
-    text-align: justify;
-    justify-content: center;
-    
+   align-items: center;
+   gap: 80px;
+   background-color: #e1e2e6;
+   
 }
 
-.Informacion-1 img{
-    width: 310px;
-    border-radius: 5px;
-    float: left;
-    margin-right: 15px;
+#Informacion-salud h4 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.Informacion-1{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    justify-items: center;
+   
+}
+
+.Informacion-card {
+    background-color: gray;
+    width: 350px;
+    height: auto;
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Informacion-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+.Informacion-card P {
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 1px 1px white, -1px -1px #0f0f0f;
+ background-color: #ddd;
+ color: #080808;
+ border-radius: 10px;
+ 
+ 
+}
+
+.Informacion-card h5 {
+    font-weight: 800;
+    font-size: 20px;
+    text-shadow: 0 0 20px #fefcc9, 2px -2px 3px #feec85, -4px -4px 5px #ffae34, 5px -10px 6px #ec760c, -5px -12px 8px #cd4606, 0 -15px 20px #973716, 2px -15px 20px #451b0e;
+ color: #666;
+
+} 
+
+/* CAJA DE FRASE */
+
+.frase-box {
+    background-color: #f7f7f7;
+    border-left: 5px solid #68956b;
+    padding: 10px 20px;
+    margin: 40px auto;
+    font-style: italic;
+    max-width: 600px;
+    color: #333;
+    text-align: center;
+}
+
+.Alimentacion,
+.Contacto-content,
+#Informacion-salud {
+    margin-bottom: 80px;
 }
 
 
 
 /* footer */
-.box{
-    width: 100%;
-    height: 65%;
+
+.footer {
+    background-color: #526153; /* verde clarito */
     text-align: center;
-    padding: 20px;
-    background-color: #526153;
-}
+    padding: 2rem 1rem;
+  }
 
-.copyright {
-    margin-bottom: 10px;
-}
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-.red-social{
-    margin-top: 10px;
-}
-
-.icon-elem a{
-    margin-left: 10px;
-    text-decoration: none;
+  .footer-text {
+    font-size: 1rem;
     color: #eae6ca;
-}
+    margin: 1rem 0;
+  }
+
+  .paw-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+
+
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Aplicamos animaciones suaves */
+  .fade-in-up {
+    opacity: 0;
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+  
+  /* Retrasos en cascada para elementos múltiples */
+  .fade-in-up.delay-1 {
+    animation-delay: 0.2s;
+  }
+  .fade-in-up.delay-2 {
+    animation-delay: 0.4s;
+  }
+  .fade-in-up.delay-3 {
+    animation-delay: 0.6s;
+  }
+  .fade-in-up.delay-4 {
+    animation-delay: 0.8s;
+  }
+  
+   
+
+
+
+
+ 
+  
+  
+  
 
 
 
