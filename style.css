@@ -177,11 +177,12 @@ main{
 }
 
 .text-p{
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     margin-bottom: 10px;
     padding: 0 20px;
     text-align: justify;
+    line-height: 1.6;
 }
 
 .red-text-shadow {
@@ -198,12 +199,14 @@ main{
 
 .items li{ 
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
     list-style-position: inside;
+    line-height: 1.6;
    
     
 }
+
 
 
 
@@ -228,9 +231,10 @@ main{
 }
 
 .Contacto-1 p {
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
     padding: 0 20px;
+    line-height: 1.6;
 }
 
 

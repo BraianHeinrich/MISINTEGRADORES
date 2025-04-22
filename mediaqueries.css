@@ -96,7 +96,7 @@
 
     .text-p, .items li, .Contacto-1 p {
         padding: 0;
-        font-size: 25px;
+        font-size: 16px;
     }
 
     .Informacion-1 {
@@ -110,14 +110,14 @@
         
     }
     .Informacion-card p {
-        font-size: 23px;
+        font-size: 16px;
     }
     .Informacion-card h5 {
         font-size: 22px;
     }
 
     .Contacto-1 p {
-        font-size: 25px;
+        font-size: 16px;
         text-align: justify;
         padding: 0 30px;
     }
@@ -153,7 +153,12 @@
    .cover p{
      font-size: 15px;
      padding: 0 10px;
-     
+   }
+
+   .text-p,
+   .items li,
+   .Contacto-1 p {
+    font-size: 16px;
    }
 
    .text-p,
@@ -185,6 +190,14 @@
    .Informacion-card {
     width: 95%;
     padding: 20px;
+   }
+
+   .Informacion-card p {
+    font-size: 16px;
+   }
+
+   .frase-box {
+    font-size: 16px;
    }
 
    /* FOOTER */
