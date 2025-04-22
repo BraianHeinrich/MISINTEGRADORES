@@ -61,7 +61,7 @@
     .container_cover {
         flex-direction: column;
         padding: 80px 10px;
-        text-align: center;
+        background-size: cover;
     }
 
     .cover{
@@ -82,7 +82,7 @@
    
 
     .cover p{
-       font-size: 16px;
+       font-size: 23px;
        width: 90%;
     }
 
@@ -96,6 +96,7 @@
 
     .text-p, .items li, .Contacto-1 p {
         padding: 0;
+        font-size: 25px;
     }
 
     .Informacion-1 {
@@ -106,14 +107,23 @@
     .Informacion-card {
         width: 90%;
         height: auto;
+        
+    }
+    .Informacion-card p {
+        font-size: 23px;
+    }
+    .Informacion-card h5 {
+        font-size: 22px;
     }
 
     .Contacto-1 p {
-        font-size: 20px;
+        font-size: 25px;
         text-align: justify;
         padding: 0 30px;
     }
-    
+    .frase-box {
+        font-size: 25px;
+    }
 }
 /* CELULAR */
 @media (max-width:576px) {
@@ -143,6 +153,7 @@
    .cover p{
      font-size: 15px;
      padding: 0 10px;
+     
    }
 
    .text-p,
@@ -150,6 +161,7 @@
    .Contacto-1 p {
     padding: 0 10px;
    }
+
 
    .card- img{
     display: none;
@@ -159,7 +171,7 @@
    .Alimentacion-group h3,
    .nutricion-1,
    .Contacto-1 h3 {
-    font-size: 18px;
+    font-size: 24px;
    }
 
    .Informacion-1 {
