@@ -144,32 +144,27 @@ main{
 
 /*segunda pagina */
 
-.Alimentacion {
-    background-position: center center;
-    background-repeat: no-repeat ;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-    background-color: #e1e2e6;
+.text-p,
+.items li,
+.Contacto-1 p{
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
 }
 
-.Alimentacion-content{
-    text-align: center;
-    max-width: 1200px
-    
-    
+.Alimentacion,
+
+#Informacion-salud {
+   margin-bottom: 80px;
+   max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 20px;
 }
 
 
-
- .Alimentacion-content h2{
-    font-size: 2rem;
-    line-height: normal;
-    color: #080600;
-    margin-bottom: 10px;
-    text-align: center;
-    
-}
 
 h3 {
     font-size: 22px;
@@ -180,14 +175,8 @@ h3 {
 
 
 
-.text-p{
-    font-size: 16px;
-    line-height: 1.6;
-    color: black;
-    margin-bottom: 20px;
-}
 
-.text-p ul,
+ul,
 .text-p li {
     list-style-type: disc;
     margin-left: 20px;
