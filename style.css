@@ -145,8 +145,8 @@ main{
 /*segunda pagina */
 
 .text-p,
-.items li,
-.Contacto-1 p{
+.items li
+{
     padding: 0 20px;
     font-size: 16px;
     line-height: 1.6;
@@ -154,17 +154,20 @@ main{
     margin-bottom: 20px;
 }
 
-.Alimentacion,
-
-#Informacion-salud {
-   margin-bottom: 80px;
-   max-width: 800px;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 0 20px;
+#Alimentacion {
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
-
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0f0f0f;
+    text-align: center;
+}
 
 h3 {
     font-size: 22px;
@@ -173,13 +176,10 @@ h3 {
     color: black;
 }
 
-
-
-
-ul,
-.text-p li {
-    list-style-type: disc;
-    margin-left: 20px;
+ul.text-p li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+   
 }
 
 .red-text-shadow {
@@ -212,11 +212,12 @@ ul,
 }
 
 .Contacto-1 h3{
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 15px;
     color: #080600;
     text-align: center;
-    font-size: 3rem;
-    line-height: normal;
-    text-shadow: #b3aeae 0 -5px;
+    text-shadow: 1px 1px white, -2px -2px #0f0f0f;
 }
 
 .Contacto-1 p {
