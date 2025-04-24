@@ -96,7 +96,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px 0;
+    padding: 120px 20px;
     background-image: url(imagenes/imagen\ de\ fondo\ portada.jpg);
     background-size: cover;
     background-position: center;
@@ -160,6 +160,7 @@ main{
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
+    
 }
 
 h2 {
@@ -167,6 +168,7 @@ h2 {
     margin-bottom: 30px;
     color: #0f0f0f;
     text-align: center;
+   margin-top: 40px;
 }
 
 h3 {
@@ -239,14 +241,20 @@ ul.text-p li {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 80px;
+   gap: 35px;
    background-color: #e1e2e6;
+  
    
 }
+
+
+
+
 
 #Informacion-salud h4 {
     font-size: 2rem;
     font-weight: 800;
+    margin-top: auto;
 }
 
 .Informacion-1{
@@ -399,8 +407,7 @@ ul.text-p li {
     animation-delay: 0.8s;
   }
   
-   
-
+ 
 
 
 
